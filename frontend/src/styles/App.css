@@ -1,0 +1,82 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  background: #f4f6f9;
+  color: #1f2937;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1e3a5f;
+  color: #fff;
+  padding: 12px 24px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.navbar-brand { font-weight: 700; font-size: 1.1rem; }
+.navbar-links a { color: #cfe0f2; margin-right: 16px; text-decoration: none; font-size: 0.9rem; }
+.navbar-links a:hover { color: #fff; text-decoration: underline; }
+.navbar-user { display: flex; align-items: center; gap: 10px; font-size: 0.9rem; }
+.navbar-user button { background: #3465a4; color: #fff; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; }
+
+.page { max-width: 1100px; margin: 24px auto; padding: 0 16px; }
+
+.auth-page { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #1e3a5f; }
+.auth-card { background: #fff; padding: 32px; border-radius: 10px; width: 360px; box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+.auth-card h1 { font-size: 1.3rem; margin-bottom: 4px; }
+.auth-card .subtitle { color: #6b7280; margin-bottom: 16px; }
+.auth-card label { display: block; margin-bottom: 12px; font-size: 0.9rem; }
+.auth-card input { width: 100%; padding: 8px; margin-top: 4px; border: 1px solid #d1d5db; border-radius: 4px; }
+.auth-card button { width: 100%; padding: 10px; background: #1e3a5f; color: #fff; border: none; border-radius: 4px; cursor: pointer; font-weight: 600; }
+.seed-hint { margin-top: 16px; font-size: 0.78rem; background: #f4f6f9; padding: 8px; border-radius: 6px; }
+
+.stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 14px; margin: 16px 0; }
+.stat-card { background: #fff; padding: 16px; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); text-align: center; }
+.stat-value { font-size: 1.6rem; font-weight: 700; color: #1e3a5f; }
+.stat-label { font-size: 0.8rem; color: #6b7280; margin-top: 4px; }
+
+.filters-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.filters-bar input, .filters-bar select { padding: 6px 8px; border: 1px solid #d1d5db; border-radius: 4px; font-size: 0.85rem; }
+.filters-bar label { font-size: 0.75rem; color: #6b7280; display: flex; align-items: center; gap: 4px; }
+
+.voucher-table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; }
+.voucher-table th, .voucher-table td { padding: 10px 12px; border-bottom: 1px solid #eee; text-align: left; font-size: 0.88rem; }
+.voucher-table th { background: #eef2f7; }
+.clickable-row { cursor: pointer; }
+.clickable-row:hover { background: #f0f6ff; }
+
+.badge { padding: 3px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+.badge-draft { background: #e5e7eb; color: #374151; }
+.badge-pending_approval { background: #fef3c7; color: #92400e; }
+.badge-approved { background: #d1fae5; color: #065f46; }
+.badge-rejected { background: #fee2e2; color: #991b1b; }
+
+.voucher-form { background: #fff; padding: 20px; border-radius: 8px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.voucher-form label { display: flex; flex-direction: column; font-size: 0.85rem; }
+.voucher-form input, .voucher-form select, .voucher-form textarea { margin-top: 4px; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px; }
+.voucher-form button { grid-column: 1 / -1; padding: 10px; background: #1e3a5f; color: #fff; border: none; border-radius: 4px; cursor: pointer; width: fit-content; }
+
+.details-header { display: flex; align-items: center; gap: 12px; }
+.details-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+.details-section { background: #fff; padding: 16px; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+.details-section h3 { margin-top: 0; font-size: 1rem; color: #1e3a5f; }
+
+.signature-img { max-width: 220px; max-height: 100px; border: 1px solid #eee; border-radius: 4px; margin-top: 6px; display: block; }
+
+.signature-panel, .approval-panel { background: #fff; padding: 16px; border-radius: 8px; margin-top: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+.signature-panel input, .approval-panel input, .approval-panel textarea { display: block; margin: 8px 0; }
+.approval-panel textarea { width: 100%; min-height: 60px; padding: 8px; }
+
+.action-bar { margin-top: 16px; display: flex; gap: 10px; }
+button { font-family: inherit; }
+.action-bar button, .signature-panel button, .approval-panel button {
+  padding: 9px 16px; border: none; border-radius: 4px; cursor: pointer; background: #1e3a5f; color: #fff; font-weight: 600;
+}
+.btn-danger { background: #b91c1c !important; }
+
+.error-text { color: #b91c1c; font-size: 0.85rem; }
+.info-text { color: #065f46; font-size: 0.85rem; }
+.hint { color: #6b7280; font-size: 0.85rem; margin-top: 8px; }
