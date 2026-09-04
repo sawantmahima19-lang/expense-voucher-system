@@ -153,3 +153,39 @@ All endpoints (except `/auth/login`) require `Authorization: Bearer <token>`.
 Signature images (PNG/JPG/JPEG/WEBP, max 2MB by default) are stored on disk
 under `backend/uploads/signatures/` and referenced by path in the database.
 Served statically at `http://localhost:5000/uploads/signatures/<filename>`.
+
+
+## Screenshots
+
+### Login Page
+![Login Page](screenshots/login%20page.jpg)
+
+### Employee Dashboard
+![Employee Dashboard](screenshots/emp%20dashboard.jpg)
+
+### Employee Expense
+![Employee Expense](screenshots/emp%20expanse.jpg)
+
+### Voucher Creation
+![Voucher Creation](screenshots/emp%20voucher%20creation.jpg)
+
+### Voucher Information
+![Voucher Information](screenshots/voucher%20information%201.jpg)
+
+### Voucher Details
+![Voucher Details](screenshots/voucher%20info2.jpg)
+
+### Director Dashboard
+![Director Dashboard](screenshots/director%20dashboard.jpg)
+
+### Pending Approval Dashboard
+![Pending Approval Dashboard](screenshots/pending%20approval%20dasdboard.jpg)
+
+### All Vouchers - Director
+![All Vouchers - Director](screenshots/all%20voucher%20from%20directors%20account.jpg)
+
+### Accounts Dashboard
+![Accounts Dashboard](screenshots/account%20dasdboard.jpg)
+
+### All Vouchers - Accounts
+![All Vouchers - Accounts](screenshots/all%20voucher%20from%20account.jpg)
