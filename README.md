@@ -1,6 +1,6 @@
 # Expense Voucher Management System
 
-Full Stack Developer Internship Assignment — Prachay Securities Pvt. Ltd.
+Full Stack Developer Internship Assignment 
 
 A web app that digitizes the employee expense voucher creation, approval, and
 tracking process across three roles: **Employee**, **Director (Admin)**, and
